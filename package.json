@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/covid19sl/covid19sl.github.io/issues"
   },
-  "homepage": "https://github.com/covid19sl/covid19sl.github.io#readme"
+  "homepage": "https://github.com/covid19sl/covid19sl.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
 }
