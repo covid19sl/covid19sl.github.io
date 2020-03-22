@@ -2,11 +2,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Covid 19 - Sri Lanka Updates</title>
+
+	<meta property="og:title" content="Covid 19 - Sri Lanka Updates" />
+	<meta property="og:type" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="images/og-image.jpg" />
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161448343-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-161448343-1');
+	</script>
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -26,7 +42,7 @@
 					<div class="card-body">
 						<h5 class="card-title text-danger">Cases</h5>
 						<div class="spinner-grow text-danger" role="status" id="cases-loader">
-						  	<span class="sr-only">Loading...</span>
+							<span class="sr-only">Loading...</span>
 						</div>
 						<h5 id="cases-count" style="display: none;"></h5>
 					</div>
@@ -37,7 +53,7 @@
 					<div class="card-body">
 						<h5 class="card-title text-success">Recovered</h5>
 						<div class="spinner-grow text-success" role="status" id="recover-loader">
-						  	<span class="sr-only">Loading...</span>
+							<span class="sr-only">Loading...</span>
 						</div>
 						<h5 id="recover-count" style="display: none;"></h5>
 					</div>
@@ -48,7 +64,7 @@
 					<div class="card-body">
 						<h5 class="card-title text-secondary">Deaths</h5>
 						<div class="spinner-grow text-secondary" role="status" id="deaths-loader">
-						  	<span class="sr-only">Loading...</span>
+							<span class="sr-only">Loading...</span>
 						</div>
 						<h5 id="deaths-count" style="display: none;"></h5>
 					</div>
@@ -59,7 +75,9 @@
 
 	<div class="container mt-4">
 		<h3 class="text-center">Current Situation in a Graph</h3>
-		<canvas id="coronachartsl" height="100"></canvas>
+		<div class="chart-wrapper">
+			<canvas id="coronachartsl"></canvas>
+		</div>
 	</div>
 
 	<div class="container mt-4">

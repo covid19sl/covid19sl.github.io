@@ -77,6 +77,7 @@ function drawLineChart() {
 
 			// Instantiate a new chart
 			var coronachartsl = new Chart(ctx, {
+				responsive: true,
 				type: 'line',
 				data: {
 					labels: labels,
